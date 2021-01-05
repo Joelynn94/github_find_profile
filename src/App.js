@@ -17,7 +17,7 @@ const App = () => {
   return (
     <GithubState>
       <AlertState>
-        <Router>
+        <Router base={process.env.PUBLIC_URL}>
           <div className="App">
             <Navbar title="Github Finder" icon="fab fa-github"/>
             <div className="container">
