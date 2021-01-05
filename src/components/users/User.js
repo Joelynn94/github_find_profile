@@ -12,6 +12,7 @@ const User = ({ match }) => {
   useEffect(() => {
     getUser(match.params.login)
     getUserRepos(match.params.login)
+    // eslint-disable-next-line 
   }, [])
 
 
@@ -48,7 +49,7 @@ const User = ({ match }) => {
           <img 
             src={avatar_url} 
             className="round-img"
-            alt="profile image"
+            alt="user profile"
             style={{ width: '150px' }}
           />
           <h1>{name}</h1>
